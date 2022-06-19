@@ -10,10 +10,13 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <link rel="stylesheet" href="style.css">
 
 
-  <title>Portfolio | Jonson M</title>
+  <title>My Portfolio | Jonson M</title>
 
 
 
@@ -24,7 +27,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg shadow navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#home">My Portfolio</a>
+      <a class="navbar-brand" href="#home">My PORTFOLIO</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,8 +47,8 @@
   <!-- Home -->
   <section class="jumbotron text-center">
     <img src="img/PasFoto.jpg" width="200" alt="Jonson Mabilegi" class="rounded-circle img-thumbnail">
-    <h1 class="display-4 fw-bold">Jonson Mabilegi</h1>
-    <p class="lead">Fresh Graduate | Freelance</p>
+    <h1 class="display-4 fw-bold mb-0">Jonson Mabilegi</h1>
+    <p class="lead"></p>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#fff" fill-opacity="1"
         d="M0,192L21.8,165.3C43.6,139,87,85,131,96C174.5,107,218,181,262,202.7C305.5,224,349,192,393,154.7C436.4,117,480,75,524,90.7C567.3,107,611,181,655,218.7C698.2,256,742,256,785,234.7C829.1,213,873,171,916,160C960,149,1004,171,1047,192C1090.9,213,1135,235,1178,250.7C1221.8,267,1265,277,1309,261.3C1352.7,245,1396,203,1418,181.3L1440,160L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z">
@@ -57,28 +60,38 @@
   <!-- About -->
   <section id="about">
     <div class="container">
-      <div class="row justify-content-center fs-5">
-        <div class="col-md-6">
-          <h2 class="text-center mb-3">Tentang Saya</h2>
-          <p>
+      <div class="row mb-3 text-center">
+        <div class="col">
+          <h2 class="text-center fw-bold">Tentang Saya</h2>
+          <p data-aos="fade-up">
             Saya berumur 23 tahun, lulusan sarjana (S1). Saya mudah
             beradaptasi, dapat bekerja keras, bekerja sama dalam tim maupun secara individu. Saya seorang yang teliti
             dan senang mempelajari akan hal baru.
           </p>
         </div>
-        <div class="col-md-6">
-          <h2 class="text-center mb-3">Riwayat Pendidikan</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000">
+          <h5 class="mb-3 fw-bold text-center">Kemampuan</h5>
+          <ul>
+            <li>HTML, CSS, Javascript</li>
+            <li>PHP Native, framework Laravel</li>
+            <li>Database MySQL</li>
+          </ul>
+        </div>
+        <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+          <h5 class="fw-bold mb-3 text-center">Riwayat Pendidikan</h5>
           <div class="mb-0">
-            <span class="badge rounded-pill text-bg-info">2003-2010</span> <b>SD Inpres Harekakae</b>
+            <span class="badge rounded-pill text-bg-info">2003-2010</span> SD Inpres Harekakae
           </div>
-          <div class="mt-2">
-            <span class="badge rounded-pill text-bg-info">2010-2013</span> <b>SMP Katolik Sabar-Subur Betun</b>
+          <div class="mt-3">
+            <span class="badge rounded-pill text-bg-info">2010-2013</span> SMP Katolik Sabar-Subur Betun
           </div>
-          <div class="mt-2">
-            <span class="badge rounded-pill text-bg-info">2013-2016</span> <b>SMA Negeri Harekakae</b>
+          <div class="mt-3">
+            <span class="badge rounded-pill text-bg-info">2013-2016</span> SMA Negeri Harekakae
           </div>
-          <div class="mt-2">
-            <span class="badge rounded-pill text-bg-info">2016-2021</span> <b>S1 Ilmu Komputer UNDANA Kupang</b>
+          <div class="mt-3">
+            <span class="badge rounded-pill text-bg-info">2016-2021</span> S1 Ilmu Komputer UNDANA Kupang
           </div>
         </div>
       </div>
@@ -96,60 +109,23 @@
     <div class="container">
       <div class="row mb-3">
         <div class="col text-center">
-          <h2>My Projects</h2>
+          <h2>Proyek Dikerjakan</h2>
         </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-          <div class="card">
-            <img src="img/projects/1.jpg" class="card-img-top" alt="Projects 1">
+          <div class="card" data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/projects/gracevetcare.png" class="card-img-top" alt="Grace Vet Care Kupang">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
+              <p class="card-text">
+                Website profil klinik hewan Grace Vet Care Kupang. Salah satu klinik hewan terbesar di Kota Kupang.
+                Website yang dibuat menggunakan HTML, CSS, Javascript, dan PHP.
               </p>
+              <a href="https://gracevetcarekoe.com" target="_BLANK" class="btn btn-dark btn-sm">Demo</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-          <div class="card">
-            <img src="img/projects/2.jpg" class="card-img-top" alt="Projects 2">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-          <div class="card">
-            <img src="img/projects/3.jpg" class="card-img-top" alt="Projects 3">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-          <div class="card">
-            <img src="img/projects/4.jpg" class="card-img-top" alt="Projects 4">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
-          <div class="card">
-            <img src="img/projects/5.jpg" class="card-img-top" alt="Projects 5">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.
-              </p>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -167,7 +143,7 @@
       <div class="row mb-3">
         <div class="col text-center">
           <h2>Kontak Saya</h2>
-          <p>
+          <p data-aos="fade-up" data-aos-duration="1000">
             <a href="tel:+6282386124956" target="_BLANK" class="text-dark text-decoration-none">
               <img src="img/telepon.png" alt="" width="15" class="mb-1"> Telepon</a> |
             <a href="https://wa.me/+6282144811550?text=Hallo Jonson" target="_BLANK"
@@ -187,7 +163,7 @@
           </p>
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
         <div class="col-md-8">
 
           <div class="alert alert-success alert-dismissible fade show d-none berhasil-kontak" role="alert">
@@ -239,6 +215,26 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+  <!-- Tutup AOS -->
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+  <script>
+    gsap.registerPlugin(TextPlugin);
+    gsap.to('.lead', { duration: 5, delay: 1.5, text: { value: 'Fresh Graduate | Freelance' } })
+    gsap.from('.jumbotron img', { duration: 2, y: -100, opacity: 0, ease: 'bounce' })
+    gsap.from('.jumbotron .display-4', { duration: 1, y: -50, opacity: 0, delay: 0.5, ease: 'back' })
+  </script>
+  <!-- Tutup GSAP -->
 
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwT45O0C1NUQtRFU0bQssZkpJRHxxkaAcwebcKe5LpGBqlvVAYs1JgvM-POpWTXuy8/exec'
